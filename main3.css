@@ -1,0 +1,254 @@
+:root{
+box-sizing: border-box;
+font-size: 16px;
+--column_width: 14.75rem;
+--row_increment: 0.5rem;
+--pin_border_radius: 1rem;
+--pin_small: 26;
+--pin_medium: 33;
+--pin_large: 45;
+}
+
+body{
+    width: 100%;
+    margin: 0;
+}
+
+#navbar-pinterest{
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    padding-bottom: 15px ;
+    z-index: 100;
+}
+
+#pinterest-logo{
+    margin: 0px 2px;
+    width: 40px;
+}
+
+.nav-button{
+    padding: 0px 20px;
+    text-align: center;
+    align-items: center;
+    border-radius: 40px;
+    font-weight: bold;
+    height: 7vh;
+    border: none;
+    background-color: beige;
+}
+
+.nav-button:hover{
+    cursor: pointer;
+    background-color: lightslategray;
+}
+
+.nav-button:focus{
+    background-color: black;
+    color: white;
+}
+
+.expand{
+    height: 1.0rem;
+    width: 1.0rem;
+    align-items: end;
+}
+
+.finder{
+    border: 1px solid lightgray;
+    width: 60%;
+    height: 45px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    background-color: white;
+}
+
+.finder:hover{
+    box-shadow: 0px 0px 4px 0px lightgray;
+}
+
+.finder i{
+    font-size: 17px;
+    color: gray;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.finder input{
+    flex-grow: 1;
+    height: 30px;
+    margin-right: 15px;
+    font-size: 16px;
+    border: none;
+    background-color: #f0f0f0;
+}
+
+.finder input:focus{
+    outline: none;
+}
+
+#profile-img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#profile-img:hover{
+    background-color: cornsilk;
+}
+
+.notif-button {
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.msg-button {
+    background-color: #fff;
+    height: 45px;
+    width: 45px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 30px;
+     }
+
+.user-icon {
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.user-icon span{
+    font-size: 18px;
+    color: white;
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.gallery{
+    display: flexbox;
+    margin-top: 90px;
+    padding: 10px;
+    column-count: 4;
+    text-align: center;
+    width: 100%;
+}
+
+img{
+    width: 100%;
+}
+
+.gallery img:hover{
+    filter: opacity(55%);
+}
+
+.card-image{
+    position: relative;
+    width: 100%;
+    margin: 5px;
+}
+
+
+.keep-button{
+    display: none;
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    padding: 10px 0px;
+    text-align: center;
+    align-items: center;
+    border-radius: 40px;
+    font-size: 1vw;
+    font-weight: bold;
+    width: 7em;
+    border: none;
+    background-color: #e41c24;
+    color: #fff;
+    font-weight: bold;
+}
+
+.keep-button:hover{
+    cursor: pointer;
+    background-color: #be161b;
+}
+
+.keep-button:focus{
+    background-color: black;
+    color: white;
+}
+
+.share-button{
+    display: none;
+    position: absolute;
+    top: 8px;
+    right: 65px;
+    padding: 10px 0px;
+    text-align: center;
+    align-items: center;
+    border-radius: 40px;
+    font-size: 1vw;
+    font-weight: bold;
+    width: 3.5em;
+    border: none;
+    background-color: #e41c24;
+    color: #fff;
+    font-weight: bold;
+}
+
+.share-button:hover{
+    cursor: pointer;
+    background-color: #be161b;
+}
+
+.share-button:focus{
+    background-color: black;
+    color: white;
+}
+
+.more-button{
+    display:none;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    padding: 10px 0px;
+    text-align: center;
+    align-items: center;
+    border-radius: 40px;
+    font-size: 1vw;
+    font-weight: bold;
+    width: 3.5em;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+}
+
+.more-button:hover{
+    cursor: pointer;
+    background-color: lightgray;
+}
+
+.more-button:focus{
+    background-color: black;
+    color: white;
+}
